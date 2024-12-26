@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.jtocr.Controller.footageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+        <center>
+            <StackPane alignment="CENTER">
+                <MediaView fx:id="mediaView" fitHeight="400" fitWidth="600" />
+            </StackPane>
+        </center>
+        <bottom>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
+                <Button fx:id="backButton" mnemonicParsing="false" text="Back"/>
+                <Button fx:id="playButton" mnemonicParsing="false" text="Play" />
+                <Slider fx:id="slider" blockIncrement="10.0" majorTickUnit="25.0" max="100.0" min="0.0" snapToTicks="true" />
+                <Button fx:id="screenshotButton" mnemonicParsing="false" text="Screenshot" />
+            </HBox>
+        </bottom>
+    </BorderPane>
+
+</AnchorPane>

@@ -1,0 +1,45 @@
+/* Style for the root node */
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+/* Style for the menu bar */
+.menu-bar {
+    -fx-background-color: #555;
+    -fx-text-fill: white;
+}
+
+/* Style for the image view */
+.image-view {
+    -fx-padding: 10px;
+}
+
+/* Style for the buttons under the image view */
+.button-bar {
+    -fx-padding: 10px;
+}
+
+/* Style for the main content area */
+.main-content {
+    -fx-padding: 20px;
+}
+
+/* Style for the buttons at the bottom */
+.bottom-buttons {
+    -fx-padding: 10px;
+}
+
+/* Style for the buttons in general */
+.button {
+    -fx-background-color: #555;
+    -fx-text-fill: white;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14px;
+}
+
+/* Style for the button hover */
+.button:hover {
+    -fx-background-color: #999;
+}
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="763.0" styleClass="background" stylesheets="Login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jtocr.LoginController">
+  <children>
+    <AnchorPane id="anchorPane2" layoutX="231.0" layoutY="127.0" prefHeight="285.0" prefWidth="301.0" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="127.0">
+      <children>
+        <VBox id="VBox" prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <AnchorPane id="AnchorPane" prefHeight="158.0" prefWidth="300.0">
+              <children>
+                <Label id="label1" layoutX="14.0" layoutY="14.0" text="Username" AnchorPane.leftAnchor="70.0" />
+                <TextField id="textField1" fx:id="userId" layoutX="14.0" layoutY="35.0" prefHeight="38.0" prefWidth="278.0" AnchorPane.leftAnchor="70.0" />
+                <Label id="label2" layoutX="14.0" layoutY="76.0" text="Password" AnchorPane.leftAnchor="70.0" />
+                <PasswordField id="passwordField1" fx:id="password" layoutX="14.0" layoutY="97.0" prefHeight="25.0" prefWidth="170.0" AnchorPane.leftAnchor="70.0" />
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+          <Button id="button1" fx:id="login" defaultButton="true" layoutX="12.0" layoutY="146.0" onAction="#processLogin" text="Login" AnchorPane.leftAnchor="70.0" />
+          <Button fx:id="signUp" defaultButton="true" layoutX="12.0" layoutY="203.0" onAction="#gotoSignUp" text="Don't have an account? Sign up here!" AnchorPane.leftAnchor="70.0" />
+      </children>
+    </AnchorPane>
+    <HBox id="hBox1" layoutX="50.0" layoutY="420.0" prefHeight="20.0" prefWidth="400.0" spacing="10.0">
+      <children>
+        <Label id="label3" fx:id="errorMessage" prefHeight="15.0" prefWidth="371.0" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>

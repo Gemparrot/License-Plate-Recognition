@@ -1,0 +1,36 @@
+/* Styling for the HBox at the top */
+.hbox {
+    -fx-background-color: #3F51B5;
+    -fx-padding: 10px;
+}
+
+/* Styling for the RB-Tech text */
+#rb-tech {
+    -fx-fill: red;
+    -fx-stroke: black;
+    -fx-stroke-width: 2px;
+    -fx-font-size: 24px;
+}
+
+/* Styling for the buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #FFFFFF;
+}
+
+/* Styling for the ListView */
+.list-view {
+    -fx-background-color: #FFFFFF;
+}
+
+#licensePlateListView {
+    -fx-background-color: #f2f2f2;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: #333;
+    -fx-padding: 10px;
+}
+
+#licensePlateListView .list-cell:hover {
+    -fx-background-color: #ddd;
+}

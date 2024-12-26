@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jtocr.Controller.ArchiveController">
+    <stylesheets>
+        <URL value="@Archive.css" />
+    </stylesheets>
+    <children>
+        <HBox alignment="TOP_RIGHT" layoutY="-1.0" prefHeight="54.0" prefWidth="806.0" spacing="10" style="-fx-background-color: #3F51B5; -fx-padding: 10px;">
+            <children>
+                <Text fill="RED" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="RB-Tech" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="450.0" />
+                    </HBox.margin>
+                </Text>
+                <Button fx:id="CCTVButton" mnemonicParsing="false" text="CCTV">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+                <Button fx:id="mainPageButton" mnemonicParsing="false" text="Main">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+                <ImageView fx:id="profileImage" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </HBox>
+        <Pane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+            <children>
+                <ListView fx:id="licensePlateListView" prefHeight="534.0" prefWidth="806.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
